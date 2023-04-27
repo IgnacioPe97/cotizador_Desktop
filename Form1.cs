@@ -1,5 +1,7 @@
 using Fahrenheit451;
 using Celsius;
+using KelvinClass = Kelvin.Kelvin;
+using CelsiusClass = Celsius.Celsius;
 using Kelvin;
 
 namespace ConversorTemperatura
@@ -20,7 +22,6 @@ namespace ConversorTemperatura
                 txb_Celsius.Focus();
                 e.Cancel = true;
             }
-
         }
 
         private void txt_Celsius_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -50,11 +51,27 @@ namespace ConversorTemperatura
         private void btn_Farenheit_Click(object sender, EventArgs e)
         {
             double valor;
-            double.TryParse(txb_Farenheit.Text, out valor);
-            Fahrenheit farenheit = new Fahrenheit(valor);
-            Kelvin kelvin = new Kelvin();
-            Celsius celsius = new Celsius();
+            if (double.TryParse(txb_Farenheit.Text, out valor))
+            {
+                Fahrenheit farenheit = new Fahrenheit(valor);
+                txt_FarToFar.Text = Convert.ToString(farenheit.GetTemperatura());
+                KelvinClass kelvin = (KelvinClass)farenheit;
+                txt_FarToKel.Text = Convert.ToString(kelvin.GetTemperatura());
+                CelsiusClass celsius = (CelsiusClass)farenheit;
+                txt_FarToCel.Text = Convert.ToString(celsius.GetTemperatura());
+            }
 
+
+
+
+        }
+
+        private void txb_Farenheit_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(txt_Farenheit.Text, out double tempFar))
+            {
+
+            }
         }
     }
 }

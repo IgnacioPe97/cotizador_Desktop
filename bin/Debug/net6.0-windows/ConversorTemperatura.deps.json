@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ConversorTemperatura/1.0.0": {
+        "dependencies": {
+          "Celsius": "1.0.0",
+          "Fahrenheit451": "1.0.0",
+          "Kelvin": "1.0.0"
+        },
+        "runtime": {
+          "ConversorTemperatura.dll": {}
+        }
+      },
+      "Celsius/1.0.0": {
+        "dependencies": {
+          "Fahrenheit451": "1.0.0",
+          "Kelvin": "1.0.0"
+        },
+        "runtime": {
+          "Celsius.dll": {}
+        }
+      },
+      "Fahrenheit451/1.0.0": {
+        "runtime": {
+          "Fahrenheit451.dll": {}
+        }
+      },
+      "Kelvin/1.0.0": {
+        "dependencies": {
+          "Fahrenheit451": "1.0.0"
+        },
+        "runtime": {
+          "Kelvin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConversorTemperatura/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Celsius/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fahrenheit451/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kelvin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

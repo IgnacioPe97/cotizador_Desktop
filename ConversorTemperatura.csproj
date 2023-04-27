@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Celsius\Celsius.csproj" />
+    <ProjectReference Include="..\Fahrenheit451\Fahrenheit451.csproj" />
+    <ProjectReference Include="..\Kelvin\Kelvin.csproj" />
+  </ItemGroup>
+
 </Project>

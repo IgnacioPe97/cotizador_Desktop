@@ -40,9 +40,9 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            txt_FarToFar = new TextBox();
+            txt_FarToCel = new TextBox();
+            txt_FarToKel = new TextBox();
             SuspendLayout();
             // 
             // txt_Farenheit
@@ -81,6 +81,7 @@
             txb_Farenheit.Name = "txb_Farenheit";
             txb_Farenheit.Size = new Size(100, 23);
             txb_Farenheit.TabIndex = 3;
+            txb_Farenheit.TextChanged += txb_Farenheit_TextChanged;
             txb_Farenheit.Validating += txt_Farenheit_Validating;
             // 
             // txb_Celsius
@@ -157,35 +158,35 @@
             label3.TabIndex = 11;
             label3.Text = "Kelvin";
             // 
-            // textBox4
+            // txt_FarToFar
             // 
-            textBox4.Location = new Point(414, 116);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 12;
+            txt_FarToFar.Location = new Point(414, 116);
+            txt_FarToFar.Name = "txt_FarToFar";
+            txt_FarToFar.Size = new Size(100, 23);
+            txt_FarToFar.TabIndex = 12;
             // 
-            // textBox5
+            // txt_FarToCel
             // 
-            textBox5.Location = new Point(538, 115);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 13;
+            txt_FarToCel.Location = new Point(538, 115);
+            txt_FarToCel.Name = "txt_FarToCel";
+            txt_FarToCel.Size = new Size(100, 23);
+            txt_FarToCel.TabIndex = 13;
             // 
-            // textBox6
+            // txt_FarToKel
             // 
-            textBox6.Location = new Point(679, 115);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 14;
+            txt_FarToKel.Location = new Point(679, 115);
+            txt_FarToKel.Name = "txt_FarToKel";
+            txt_FarToKel.Size = new Size(100, 23);
+            txt_FarToKel.TabIndex = 14;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
+            Controls.Add(txt_FarToKel);
+            Controls.Add(txt_FarToCel);
+            Controls.Add(txt_FarToFar);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -218,8 +219,8 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox txt_FarToFar;
+        private TextBox txt_FarToCel;
+        private TextBox txt_FarToKel;
     }
 }
